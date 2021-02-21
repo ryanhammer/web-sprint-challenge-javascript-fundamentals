@@ -28,14 +28,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+'.forEach' takes an array and allows for the calling of a function on each item of the array. '.map' is similar but returns an array after calling a function on each item of the array.
 
 2. Explain the difference between a callback and a higher order function.
+A callback is some function that is definined in a scope outside of the function that it is passed into; that is, a callback function is passed into some other function as a parameter and is defined outside of the scope of that function such that it can be read by the function it is passed into. A higher order function would be a function that takes in a callback as just described, or returns a function nested inside of it.
 
 3. What is closure?
+Closure is the combination of the contents of a function and the scope that function has access to.
 
 4. Describe the four rules of the 'this' keyword.
+The four rules of 'this':
+    I. Principle one is that within the global Javascript scope, 'this' will return/refer to the value of the console...that is, an object containing everything that is Javascript.
+
+    II. The second principle is an implicit binding of 'this' which binds/points 'this' to whatever was called using a preceding dot. That is, 'this' will point to whatever is to the left of the dot when a preceding dot is used to call a function that contains 'this'.
+
+    III. A new binding typically refers to use of 'this' within a constructor funtcion. The constructor function is used to create an object when it is called using 'new'...when this happens, 'this' points to the object that is being created by joining 'new' with the constructor function.
+
+    IV. Lastly, we can specifically point 'this' at objects using .call or .apply functions. This is called explicit binding. Using .apply is appropriate if we are pointing at an array.
 
 5. Why do we need super() in an extended class?
+The use of 'super()' takes the input parameters for the parent class and applies them to the extended child class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
