@@ -170,7 +170,9 @@ function CuboidMaker(attrs) {
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
-
+CuboidMaker.prototype.volume = () => {
+    return this.length * this.width * this.height;
+}
 
 
 
